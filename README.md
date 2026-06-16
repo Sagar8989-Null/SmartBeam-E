@@ -200,15 +200,41 @@ python 4detect.py
 - Creates an output video with all detections marked
 - Generates a JSON violation report
 
+<<<<<<< HEAD
 Press `Q` anytime to stop detection.
+=======
+Goes through each video frame by frame
+Draws  GREEN box on legal headlights
+Draws  RED box on illegal headlights
+Reads the number plate of illegal vehicles
+Shows a WARNING box with plate number and fine amount
+Saves a screenshot of every violation
+Creates an output video with all detections marked
+Generates a JSON report of all violations
+Press q anytime to stop detection.
+>>>>>>> 733b78d (Readme Updated)
 
 #### Output Files
 
+<<<<<<< HEAD
 | File | Description |
 |------|-------------|
 | `output/V1_result.mp4` | Video with detections drawn |
 | `output/violations/` | Screenshot of each violation |
 | `output/violation_report.json` | Complete violation report |
+=======
+output/V1_result.mp4 → Video with detections drawn
+output/violations/ → Screenshot of each violation
+output/violation_report.json → Complete violation report
+ Detection Classes
+Class ID	Name	Box Color	Meaning
+0	legal	 Green	Normal / allowed headlight
+1	illegal	 Red	Modified / illegal headlight
+2	plate	 Yellow	Vehicle number plate
+Sample Output
+Detection Window Preview
+text
+>>>>>>> 733b78d (Readme Updated)
 
 ---
 
